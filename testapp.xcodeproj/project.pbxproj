@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		757C727C26F34632007523D8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757C727B26F34632007523D8 /* CoreDataManager.swift */; };
 		75F3E5A726F25010000DD279 /* testappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3E5A626F25010000DD279 /* testappApp.swift */; };
 		75F3E5A926F25010000DD279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3E5A826F25010000DD279 /* ContentView.swift */; };
 		75F3E5AB26F25011000DD279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F3E5AA26F25011000DD279 /* Assets.xcassets */; };
 		75F3E5AE26F25011000DD279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F3E5AD26F25011000DD279 /* Preview Assets.xcassets */; };
-		75F3E5B026F25011000DD279 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3E5AF26F25011000DD279 /* Persistence.swift */; };
 		75F3E5B326F25011000DD279 /* testapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75F3E5B126F25011000DD279 /* testapp.xcdatamodeld */; };
 		75F3E5BD26F25011000DD279 /* testappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3E5BC26F25011000DD279 /* testappTests.swift */; };
 		75F3E5C726F25011000DD279 /* testappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3E5C626F25011000DD279 /* testappUITests.swift */; };
 		75F3E5C926F25011000DD279 /* testappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3E5C826F25011000DD279 /* testappUITestsLaunchTests.swift */; };
+		75F3E5D826F2510C000DD279 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F3E5D726F2510C000DD279 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +37,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		757C727B26F34632007523D8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		75F3E5A326F25010000DD279 /* testapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F3E5A626F25010000DD279 /* testappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testappApp.swift; sourceTree = "<group>"; };
 		75F3E5A826F25010000DD279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		75F3E5AA26F25011000DD279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75F3E5AD26F25011000DD279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		75F3E5AF26F25011000DD279 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		75F3E5B226F25011000DD279 /* testapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testapp.xcdatamodel; sourceTree = "<group>"; };
 		75F3E5B826F25011000DD279 /* testappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F3E5BC26F25011000DD279 /* testappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testappTests.swift; sourceTree = "<group>"; };
 		75F3E5C226F25011000DD279 /* testappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F3E5C626F25011000DD279 /* testappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testappUITests.swift; sourceTree = "<group>"; };
 		75F3E5C826F25011000DD279 /* testappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		75F3E5D526F25106000DD279 /* testapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testapp.entitlements; sourceTree = "<group>"; };
+		75F3E5D726F2510C000DD279 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F3E5D826F2510C000DD279 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +86,7 @@
 				75F3E5BB26F25011000DD279 /* testappTests */,
 				75F3E5C526F25011000DD279 /* testappUITests */,
 				75F3E5A426F25010000DD279 /* Products */,
+				75F3E5D626F2510C000DD279 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,12 +103,13 @@
 		75F3E5A526F25010000DD279 /* testapp */ = {
 			isa = PBXGroup;
 			children = (
+				75F3E5D526F25106000DD279 /* testapp.entitlements */,
 				75F3E5A626F25010000DD279 /* testappApp.swift */,
 				75F3E5A826F25010000DD279 /* ContentView.swift */,
 				75F3E5AA26F25011000DD279 /* Assets.xcassets */,
-				75F3E5AF26F25011000DD279 /* Persistence.swift */,
 				75F3E5B126F25011000DD279 /* testapp.xcdatamodeld */,
 				75F3E5AC26F25011000DD279 /* Preview Content */,
+				757C727B26F34632007523D8 /* CoreDataManager.swift */,
 			);
 			path = testapp;
 			sourceTree = "<group>";
@@ -131,6 +137,14 @@
 				75F3E5C826F25011000DD279 /* testappUITestsLaunchTests.swift */,
 			);
 			path = testappUITests;
+			sourceTree = "<group>";
+		};
+		75F3E5D626F2510C000DD279 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75F3E5D726F2510C000DD279 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F3E5B026F25011000DD279 /* Persistence.swift in Sources */,
 				75F3E5B326F25011000DD279 /* testapp.xcdatamodeld in Sources */,
 				75F3E5A926F25010000DD279 /* ContentView.swift in Sources */,
+				757C727C26F34632007523D8 /* CoreDataManager.swift in Sources */,
 				75F3E5A726F25010000DD279 /* testappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -409,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -424,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = testapp/testapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"testapp/Preview Content\"";
@@ -454,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = testapp/testapp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"testapp/Preview Content\"";
